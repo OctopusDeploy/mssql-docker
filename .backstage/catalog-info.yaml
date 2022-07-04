@@ -1,0 +1,11 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: Custom MS SQL Docker
+  description: "Fork of Microsoft's `mssql-docker` that we use to build newer Windows containers of SQL Server"
+  annotations:
+    github.com/project-slug: octopusdeploy/mssql-docker
+spec:
+  type: Docker Images
+  lifecycle: production
+  owner: octopus_engineering_productivity_team
